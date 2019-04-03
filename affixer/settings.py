@@ -5,7 +5,7 @@ import dj_database_url
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = os.environ.get("AFFIXER")
 DEBUG = False
-ALLOWED_HOSTS = ['affixer.herokuapp.com']
+ALLOWED_HOSTS = ['affixer.herokuapp.com', 'localhost', '127.0.0.1']
 AUTH_USER_MODEL = 'users.User'
 
 
@@ -114,9 +114,9 @@ USE_TZ = True
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
 STATIC_URL = '/static/'
-STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'static'),
-]
+# STATICFILES_DIRS = [
+#     os.path.join(BASE_DIR, 'frontend/build/static'),
+# ]
 
 
 # Heroku settings get overridden if local_settings.py exists.
