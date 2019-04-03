@@ -11,8 +11,10 @@ AUTH_USER_MODEL = 'users.User'
 
 INSTALLED_APPS = [
     'api.apps.ApiConfig',
+    'lexical_categories.apps.LexicalCategoriesConfig',
     'users.apps.UsersConfig',
     'words.apps.WordsConfig',
+
     'rest_framework',
     'corsheaders',
     'rest_framework.authtoken',
@@ -22,6 +24,7 @@ INSTALLED_APPS = [
     'allauth.account',
     'allauth.socialaccount',
     'rest_auth.registration',
+
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
