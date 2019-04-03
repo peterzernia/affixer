@@ -12,6 +12,7 @@ coverage.xml
 # Django:
 local_settings.py
 db.sqlite3
+staticfiles/
 
 # Environments
 .env
