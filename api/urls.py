@@ -3,5 +3,5 @@ from api.views import TransformationsListView
 
 
 urlpatterns = [
-    path('words/', TransformationsListView.as_view()),
+    path('transformations/', TransformationsListView.as_view()),
 ]
