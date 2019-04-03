@@ -12,6 +12,7 @@ AUTH_USER_MODEL = 'users.User'
 INSTALLED_APPS = [
     'api.apps.ApiConfig',
     'lexical_categories.apps.LexicalCategoriesConfig',
+    'tranformations.app.TransformationsConfig'
     'users.apps.UsersConfig',
     'words.apps.WordsConfig',
 
