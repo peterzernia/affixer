@@ -5,7 +5,7 @@ import dj_database_url
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = os.environ.get("AFFIXER")
 DEBUG = False
-ALLOWED_HOSTS = ['127.0.0.1', 'localhost', 'affixer.herokuapp.com']
+ALLOWED_HOSTS = ['affixer.herokuapp.com']
 AUTH_USER_MODEL = 'users.User'
 
 
